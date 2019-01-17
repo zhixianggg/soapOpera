@@ -5,11 +5,11 @@ class SO3_Arrange {
   public static void main(String[] args) {
     
     Scanner sc = new Scanner(System.in);
-    System.out.print("Enter a 4 digit number");
+    System.out.print("Enter a 4 digit number: ");
     int num = sc.nextInt();
     
     if (num >9999 || num <1000) {
-      System.out.print("Enter a 4 digit number");
+      System.out.print("Enter a 4 digit number: ");
       num = sc.nextInt();
     }
     if (! checkValidNum(num)) {
