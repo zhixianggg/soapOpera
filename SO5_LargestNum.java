@@ -43,19 +43,15 @@ public class SO5_LargestNum {
     public static boolean checkSwap(int num1, int num2) {
       
         
-        //get length of num1
-        int length1 = getLength(num1);
-        String str1 = Integer.toString(num1);
         
-        //get length of num2
-        int length2 = getLength(num2);
+        String str1 = Integer.toString(num1);
         String str2 = Integer.toString(num2);
         
         String permutation1 = str1+str2;
         String permutation2 = str2+str1;
         
         if (Integer.valueOf(permutation1)> Integer.valueOf(permutation2)) {
-        	return true;
+            return true;
         }
         return false;
     }
@@ -72,8 +68,8 @@ public class SO5_LargestNum {
 	int result = 0;
 	int multiplier = 1;
 	for (int i = 0 ; i < arr.length; i++) {
-		result += arr[i] * multiplier;
-		multiplier *= Math.pow(10,getLength(arr[i]));
+	    result += arr[i] * multiplier;
+	    multiplier *= Math.pow(10,getLength(arr[i]));
 	}	
 	return result;
 
