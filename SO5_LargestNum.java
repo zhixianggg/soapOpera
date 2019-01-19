@@ -69,13 +69,13 @@ public class SO5_LargestNum {
 	
     public static int getLargestNum(int[] arr) {
 		
-		int result = 0;
-		int multiplier = 1;
-		for (int i = 0 ; i < arr.length; i++) {
-			result += arr[i] * multiplier;
-			multiplier *= Math.pow(10,getLength(arr[i]));
-		}	
-		return result;
+	int result = 0;
+	int multiplier = 1;
+	for (int i = 0 ; i < arr.length; i++) {
+		result += arr[i] * multiplier;
+		multiplier *= Math.pow(10,getLength(arr[i]));
+	}	
+	return result;
 
-	}
+    }
 }
