@@ -3,7 +3,7 @@ import java.util.*;
 class SO6_canBalance {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        
         int[] a ={1,1,1,2,1}; 
         int[] b = {2,1,1,2,1};
         int[] c = {10,10};
@@ -27,6 +27,7 @@ class SO6_canBalance {
 
             //get Sum of Right Hand Side
             int sumRHS = getSum(arr,i+1,arr.length-1);
+            
             if (sumLHS == sumRHS) {
                 return true;
             }
@@ -37,11 +38,11 @@ class SO6_canBalance {
     //Return sum of elements from startIdx to endIdx in array
     public static int getSum(int[] arr, int startIdx, int endIdx) {
         
-        
         int sum = 0;
         for (int i = startIdx; i <= endIdx; i++) {
             sum += arr[i];
         }
         return sum;
+        
     }
 }
