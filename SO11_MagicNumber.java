@@ -1,3 +1,5 @@
+//Author: Oon Zhi Xiang
+
 import java.util.*;
 
 //Generate a N*N magic square where N is an odd number
